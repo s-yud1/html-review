@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tutorial - Tables</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><em>HTML Review Website</em></h1>
+        <p>Learning the main HTML tags</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="text.html">Text</a>
+        <a href="links.html">Links</a>
+        <a href="lists.html">Lists</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="media.html">Media</a>
+        <a href="semantic.html">Semantic</a>
+        <a href="metadata.html">Metadata</a>
+    </nav>
+
+    <main>
+
+        <h2><em>HTML Tables Tutorial</em></h2>
+
+        <p>
+            <strong>HTML tables allow you to organize data into rows and columns, making structured information easy to
+                read and compare.</strong>
+        </p>
+
+        <hr>
+
+        <h3>1. Basic Table Tags</h3>
+        <p>
+            A basic table is created using <code>&lt;table&gt;</code>. Rows are defined with <code>&lt;tr&gt;</code>
+            (table row), column headers with <code>&lt;th&gt;</code> (table header), and standard data cells with
+            <code>&lt;td&gt;</code> (table data).
+        </p>
+
+        <p><strong>Example:</strong></p>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>Developer</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Designer</td>
+                <td>32</td>
+            </tr>
+        </table>
+
+        <h3>2. Table Semantic Sections (`&lt;thead&gt;`, `&lt;tbody&gt;`, `&lt;tfoot&gt;`)</h3>
+        <p>
+            To keep complex tables well-structured, HTML provides three grouping elements:
+        </p>
+        <ul>
+            <li><code>&lt;thead&gt;</code> — Contains the header row(s).</li>
+            <li><code>&lt;tbody&gt;</code> — Contains the main table content.</li>
+            <li><code>&lt;tfoot&gt;</code> — Contains footer/summary info (e.g., totals).</li>
+        </ul>
+
+        <p><strong>Example:</strong></p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML Book</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>CSS Book</td>
+                    <td>$25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>$45</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h3>3. Merging Cells (`colspan` & `rowspan`)</h3>
+        <p>
+            You can make a table cell span multiple columns or rows using attributes:
+        </p>
+        <ul>
+            <li><code>colspan="n"</code> — Spans across <em>n</em> columns horizontally.</li>
+            <li><code>rowspan="n"</code> — Spans across <em>n</em> rows vertically.</li>
+        </ul>
+
+        <p><strong>Example (Colspan):</strong></p>
+        <table border="1">
+            <tr>
+                <th colspan="2">Contact Information</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>user@example.com</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <footer>
+        <p>HTML Review Project</p>
+    </footer>
+
+</body>
+
+</html>

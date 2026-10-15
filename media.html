@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tutorial - Multimedia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><em>HTML Review Website</em></h1>
+        <p>Learning the main HTML tags</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="text.html">Text</a>
+        <a href="links.html">Links</a>
+        <a href="lists.html">Lists</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="media.html">Media</a>
+        <a href="semantic.html">Semantic</a>
+        <a href="metadata.html">Metadata</a>
+    </nav>
+
+    <main>
+
+        <h2><em>HTML Multimedia Tags Tutorial</em></h2>
+
+        <p>
+            <strong>HTML5 multimedia tags allow you to seamlessly play video clips, audio files, embed external web
+                content, and render dynamic vector or canvas graphics.</strong>
+        </p>
+
+        <hr>
+
+        <h3>1. Video Element (`&lt;video&gt;`)</h3>
+        <p>
+            The <code>&lt;video&gt;</code> tag embeds video files. Use the <code>&lt;source&gt;</code> tag to provide
+            multiple formats for browser compatibility, and <code>&lt;track&gt;</code> to add subtitles or captions.
+        </p>
+        <ul>
+            <li><code>controls</code> — Displays play, pause, volume, and fullscreen buttons.</li>
+            <li><code>poster="image.jpg"</code> — Displays a thumbnail before the video plays.</li>
+            <li><code>muted</code> — Mutes the audio output by default.</li>
+        </ul>
+
+        <p><strong>Example:</strong></p>
+        <video width="320" height="240" controls poster="https://via.placeholder.com/320x240">
+            <source src="images/Rickroll HD + No ads.mp4" type="video/mp4">
+            <source src="sample-video.webm" type="video/webm">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>2. Audio Element (`&lt;audio&gt;`)</h3>
+        <p>
+            The <code>&lt;audio&gt;</code> tag embeds sound content such as music or podcasts directly onto the page.
+        </p>
+
+        <p><strong>Example:</strong></p>
+        <audio controls>
+            <source src="images/Rick_Roll_Cut_Never_Gonna_Give_You_Up_Meme_Sound_Effect_for_editing.m4a"
+                type="audio/mpeg">
+            <source src="sample-audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>3. Inline Frames (`&lt;iframe&gt;`)</h3>
+        <p>
+            The <code>&lt;iframe&gt;</code> tag embeds another web document, interactive map, or third-party video (like
+            YouTube) inside the current page.
+        </p>
+
+        <p><strong>Example:</strong></p>
+        <iframe src="https://www.wikipedia.org" width="100%" height="200" title="Wikipedia Embed">
+            Your browser does not support iframes.
+        </iframe>
+
+        <h3>4. Responsive Images (`&lt;picture&gt;`)</h3>
+        <p>
+            The <code>&lt;picture&gt;</code> tag gives developers flexibility in defining image sources based on screen
+            sizes or image formats.
+        </p>
+
+        <p><strong>Example:</strong></p>
+        <picture>
+            <source media="(min-width: 650px)" srcset="https://via.placeholder.com/600x150">
+            <source media="(min-width: 465px)" srcset="https://via.placeholder.com/400x150">
+            <img src="https://www.google.com/imgres?q=600x150%20photo&imgurl=http%3A%2F%2Fwww.tilesandsmiles.co.uk%2Fcdn%2Fshop%2Ffiles%2FSherwoodDarkWoodEffectWall_FloorPorcelainTile-600x150mm.png%3Fv%3D1726580300&imgrefurl=https%3A%2F%2Fwww.tilesandsmiles.co.uk%2Fproducts%2Fsherwood-dark-wood-effect-wall-floor-porcelain-tile-600x150mm%3Fsrsltid%3DAU7gw4Xu5QQNBQU1_hrRzZF3Qs6Wlc-nJV6iMXiHKK5iVk5wyxqVhEoW&docid=gFzmiI_BCs_i2M&tbnid=ULQbf2Suhruo3M&vet=12ahUKEwj83cGK8amXAxV8BdsEHX6kB-sQnPAOegUIgQIQAA..i&w=800&h=800&hcb=2&ved=2ahUKEwj83cGK8amXAxV8BdsEHX6kB-sQnPAOegUIgQIQAA"
+                alt="Responsive Image Example">
+        </picture>
+
+        <h3>5. Vector & Canvas Graphics (`&lt;svg&gt;` & `&lt;canvas&gt;`)</h3>
+        <p>
+            HTML offers two ways to generate graphics on web pages:
+        </p>
+        <ul>
+            <li><code>&lt;svg&gt;</code> — Scalable Vector Graphics defined directly in XML syntax (does not lose
+                quality when zoomed).</li>
+            <li><code>&lt;canvas&gt;</code> — A container used to draw graphics on the fly via JavaScript.</li>
+        </ul>
+
+        <p><strong>Example (Inline SVG Circle):</strong></p>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="dodgerblue" />
+        </svg>
+
+    </main>
+
+    <footer>
+        <p>HTML Review Project</p>
+    </footer>
+
+</body>
+
+</html>

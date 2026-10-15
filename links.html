@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tutorial - Links & Media</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><em>HTML Review Website</em></h1>
+        <p>Learning the main HTML tags</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="text.html">Text</a>
+        <a href="links.html">Links</a>
+        <a href="lists.html">Lists</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="media.html">Media</a>
+        <a href="semantic.html">Semantic</a>
+        <a href="metadata.html">Metadata</a>
+    </nav>
+
+    <main>
+
+        <h2><em>HTML Links & Media Tags Tutorial</em></h2>
+
+        <p>
+            <strong>This section covers hyperlinks for navigation as well as embedding media such as images, audio
+                tracks, and video clips into your webpage.</strong>
+        </p>
+
+        <hr>
+
+        <!-- SECTION 1: HYPERLINKS -->
+        <h2><em>1. Hyperlinks (`&lt;a&gt;`)</em></h2>
+
+        <h3>Basic Hyperlink</h3>
+        <p>
+            The <code>&lt;a&gt;</code> tag uses the <code>href</code> attribute to specify the URL address of the
+            destination page.
+        </p>
+        <p><strong>Example:</strong> Visit <a href="https://www.google.com">Google Search Engine</a></p>
+
+        <h3>Opening Links in a New Tab (`target="_blank"`)</h3>
+        <p>
+            Adding <code>target="_blank"</code> opens the linked page in a new window or browser tab.
+        </p>
+        <p><strong>Example:</strong> Open <a href="https://www.wikipedia.org" target="_blank">Wikipedia in a new tab</a>
+        </p>
+
+        <h3>Email and Phone Links</h3>
+        <p>
+            Using <code>mailto:</code> or <code>tel:</code> inside the <code>href</code> attribute allows users to send
+            emails or make phone calls directly.
+        </p>
+        <p><strong>Example:</strong> Send us an <a href="mailto:example@email.com">Email</a> or call <a
+                href="tel:+1234567890">Phone Support</a></p>
+
+        <h3>Page Anchor / Internal Link</h3>
+        <p>
+            You can jump to a specific section on the same page by referencing its <code>id</code>.
+        </p>
+        <p><strong>Example:</strong> <a href="#author-section">Jump to Project Author Section</a></p>
+
+        <hr>
+
+        <!-- SECTION 2: MEDIA TAGS -->
+        <h2><em>2. Media Elements (Images, Audio, Video)</em></h2>
+
+        <h3>Images (`&lt;img&gt;`)</h3>
+        <p>
+            The <code>&lt;img&gt;</code> tag embeds an image. It uses <code>src</code> for the file path and
+            <code>alt</code> for descriptive alternative text.
+        </p>
+        <p><strong>Example:</strong></p>
+        <img src="images/Site-background-dark.webp" alt="Placeholder Demo Image" width="300" height="150">
+
+        <h3>Image as a Link</h3>
+        <p>
+            You can wrap an <code>&lt;img&gt;</code> tag inside an <code>&lt;a&gt;</code> tag to make the image
+            clickable.
+        </p>
+        <p><strong>Example:</strong></p>
+        <a href="index.html">
+            <img src="images/pop-singer-michael-jackson-in-bremen-1997.jpg" alt="Clickable Button">
+        </a>
+
+        <h3>Audio (`&lt;audio&gt;`)</h3>
+        <p>
+            The <code>&lt;audio&gt;</code> tag embeds sound files. The <code>controls</code> attribute provides play,
+            pause, and volume controls.
+        </p>
+        <p><strong>Example:</strong></p>
+        <audio controls>
+            <source src="images/Rick_Roll_Cut_Never_Gonna_Give_You_Up_Meme_Sound_Effect_for_editing.m4a"
+                type="audio/mpeg">
+            <source src="sample-audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video (`&lt;video&gt;`)</h3>
+        <p>
+            The <code>&lt;video&gt;</code> tag embeds video files with play/pause controls, width, and height options.
+        </p>
+        <p><strong>Example:</strong></p>
+        <video width="320" height="240" controls>
+            <source src="images/Rickroll HD + No ads.mp4" type="video/mp4">
+            <source src="sample-video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+    </main>
+
+    <footer>
+        <p>HTML Review Project</p>
+    </footer>
+
+</body>
+
+</html>
